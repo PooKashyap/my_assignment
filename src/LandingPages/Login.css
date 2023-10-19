@@ -1,0 +1,86 @@
+/* Login.css */
+/* Login.css */
+.containerloginpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #57ff41, #f42906);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s linear infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    background-color: #ff416c;
+    }
+    25% {
+      background-position: 100% 50%;
+      background-color: #ff4b2b;
+    }
+    50% {
+      background-position: 0% 50%;
+      background-color: #2b86ff;
+    }
+    75% {
+      background-position: 100% 50%;
+      background-color: #2bff4b;
+    }
+    100% {
+      background-position: 0% 50%;
+      background-color: #ff2b86;
+    }
+  }
+  
+  
+  .login-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .form-group {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-login {
+    background: #ff4b2b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-login:hover {
+    background: #ff416c;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  

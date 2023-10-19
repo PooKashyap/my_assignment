@@ -1,0 +1,215 @@
+/* CSS for the Card Box */
+.card {
+    transition: transform 0.2s ease-in-out;
+    background-color: rgb(85, 186, 100);
+    /* Add smooth transition for scaling */
+}
+
+/* Add a hover effect for scaling */
+.hover-effect:hover {
+    transform: scale(1.1);
+    /* Increase the size of the card on hover */
+    background-color: #F086B4;
+}
+
+/* Add a box shadow for depth effect on hover */
+.hover-effect:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+/* Styling for the list group on the left */
+ul.list-group {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+  
+  ul.list-group h4 {
+    margin: 1rem 0;
+    font-weight: bold;
+  }
+  
+  ul.list-group-item {
+    padding: 0.5rem;
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
+  
+  ul.list-group-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  ul.list-group-item h3 {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+  
+  ul.list-group-item h3 svg {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+  }
+  /* Add this CSS to your stylesheet or component */
+
+/* Apply a simple transition to list items */
+.list-group-item h3 {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Scale and change color on hover */
+.list-group-item:hover h3 {
+  transform: scale(1.05);
+  color: #007BFF;
+}
+
+/* Apply a transition to table rows */
+.table tbody tr {
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Change background color on hover */
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+
+
+/* Alice.css */
+
+/* Set a background color for the entire component */
+body {
+  background-color: #f5f5f5;
+}
+
+/* Style the card with a hover effect */
+.card.hover-effect {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card.hover-effect:hover {
+  transform: scale(1.05);
+  background-color: #FFD700;
+}
+
+/* Style the carousel */
+.carousel.slider {
+  width: 100%;
+}
+
+/* Style the pagination */
+.pagination {
+  justify-content: center;
+}
+
+/* Style the navigation links in the pagination */
+.pagination .page-link {
+  color: #007BFF;
+  border-color: #007BFF;
+}
+
+/* Style the active page in the pagination */
+.pagination .page-item.active .page-link {
+  background-color: #007BFF;
+  border-color: #007BFF;
+  color: #fff;
+}
+
+
+
+
+/* Animation for Background Color */
+@keyframes backgroundAnimation {
+  0% {
+    background: #f0f0f0;
+  }
+  25% {
+    background: #3498db;
+  }
+  50% {
+    background: #27ae60;
+  }
+  75% {
+    background: #e74c3c;
+  }
+  100% {
+    background: #9b59b6;
+  }
+}
+
+.row {
+  animation: backgroundAnimation 10s ease infinite;
+}
+
+/* List Group Styles */
+.list-group {
+  border: 2px solid #3498db;
+  border-radius: 10px;
+}
+
+.list-group-item {
+  border: none;
+}
+
+/* Keyframe Animation for List Group */
+@keyframes listGroupAnimation {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.list-group-item {
+  animation: listGroupAnimation 1s ease-in-out;
+}
+
+/* Table Styles */
+.table {
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Keyframe Animation for Table */
+@keyframes tableAnimation {
+  0% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.table {
+  animation: tableAnimation 1s ease-in-out;
+}
+
+/* Custom Colors for Icons and Text */
+.fs-6 {
+  color: #3498db;
+}
+
+.fs-5 {
+  color: #27ae60;
+}
+
+.fs-4 {
+  color: #e74c3c;
+}
+
+/* Custom Color for Checkbox Icon */
+svg.bi-checkbox {
+  fill: #9b59b6;
+}
+
+/* Add more custom colors as needed */

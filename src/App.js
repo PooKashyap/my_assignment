@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Navbar from "./LandingPages/Navbar";
+import Sidebar from "./LandingPages/Sidebar";
+import Alicecarosl from "./LandingPages/Alicecarosl";
+import BarChartComponent from "./components/charts/BarChartComponent";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Master from "./components/charts/Master";
+import Login from "./LandingPages/Login";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Master Rcf={Navbar} />}></Route>
+          <Route path="/login" element={<Login/>}></Route>
+        </Routes>
+      </BrowserRouter>
+
+      {/* <Navbar />
+      <Alicecarosl /> */}
+      {/* <Sidebar /> */}
+
+      {/* <BarChartComponent /> */}
     </div>
   );
 }
